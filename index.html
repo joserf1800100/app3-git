@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicación</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app3.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+  <!--Grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript">
+  
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/Reciclaje2.jpg')">
+
+ <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Contaminación</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+  </div>
+  <div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>¿Qué es la contaminación?</h2>
+     <p>Muestra la definición de contaminación</p>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Tipos de contaminación</h2>
+     <p>Se muestra diferentes tipos de contaminación</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Consecuencias</h2>
+    <p>Se muestra las consecuencias producidas por la contaminación</p>
+   </a>
+ </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Reciclaje</h2>
+    <p>Se muestran como podemos reciclar y el uso de las 3R</p>
+   </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Medidas preventivas</h2>
+    <p>Se muestra como podemos prevenir la contaminación</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Contaminación en mi comunidad</h2>
+     <p>Un apartado que muestra la contaminación en mi comunidad</p>
+   </a>
+  </li>
+  </ul>
+</div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+   <img src="imagenes/mdpi.png" width="87" height="77">
+  </div>
+  <div>
+   <h4>Aplicación Tres</h4>
+   <h4>José Antonio Ramírez Franco</h4>
+  </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿Qué es la contaminación?</h1>
+ </div>
+ <div data-role="content" align="justify">
+  <div>
+   <h4></h4>
+   <h3><br>  
+     <p align="center"><img src="imagenes/Basura.jpg" width="73%" height="29%">     
+    
+        <p align="justify"><h4>La contaminación es la introducción de sustancias u otros elementos físicos en un medio que provocan que éste sea inseguro o no apto para su uso.1 El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química, energía (como sonido, calor, luz o radiactividad).</h4><br>
+
+<h4>Es siempre una alteración negativa del estado natural del medio, y por lo general, se genera como consecuencia de la actividad humana considerándose una forma de impacto ambiental.</h4><br>
+
+<h4>La contaminación puede clasificarse según el tipo de fuente de donde proviene, o por la forma de contaminante que emite o medio que contamina. Existen muchos agentes contaminantes entre ellos las sustancias químicas (como plaguicidas, cianuro, herbicidas y otros.), los residuos urbanos, el petróleo, o las radiaciones ionizantes. Todos estos pueden producir enfermedades, daños en los ecosistemas o el medioambiente. Además existen muchos contaminantes gaseosos que juegan un papel importante en diferentes fenómenos atmosféricos, como la generación de lluvia ácida, el debilitamiento de la capa de ozono, y el cambio climático.</h4></p>
+  </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Tres, JARF</h4>
+   </div>
+ </div>
+ 
+ 
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Tipos de contaminación</h1>
+ </div>
+ <div data-role="content" align="center">
+  <div>  
+  <h3>Existen 6 tipos de contaminación que son:</h3>
+   </div>
+</div>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Contaminación del Agua</h1>
+    <div>
+    <p align="justify"><h4>La contaminación hídrica o contaminación del agua es una modificación de esta, generalmente provocada por el ser humano, que la vuelve impropia o peligrosa para el consumo humano, la industria, la agricultura, la pesca y las actividades recreativas, así como para los animales.</h4><br>
+<h4>Aunque la contaminación de las aguas puede provenir de fuentes naturales, como la ceniza de un volcán,2 la mayor parte de la contaminación actual proviene de actividades humanas. El desarrollo y la industrialización suponen un mayor uso de agua, una gran generación de residuos, muchos de los cuales van a parar al agua y el uso de medios de transporte fluvial y marítimo que en muchas ocasiones, son causa de contaminación de las aguas. Las aguas superficiales son en general más vulnerables a la contaminación de origen antrópico que las aguas subterráneas, por su exposición directa a la actividad humana.</h4>
+    <br>
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/contaminacion-del-agua.jpg" width="66%" height="30%">
+    </div>
+   </div>
+  
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Contaminación del Aire</h1>
+    <div>
+    <p align="justify"><h4>La contaminación del aire es una mezcla de partículas sólidas y gases en el aire. Las emisiones de los automóviles, los compuestos químicos de las fábricas, el polvo, el polen y las esporas de moho pueden estar suspendidas como partículas. El ozono, un gas, es un componente fundamental de la contaminación del aire en las ciudades. Cuando el ozono forma la contaminación del aire también se denomina smog.</h4><br>
+
+<h4>Algunos contaminantes del aire son tóxicos. Su inhalación puede aumentar las posibilidades de tener problemas de salud. Las personas con enfermedades del corazón o de pulmón, los adultos de más edad y los niños tienen mayor riesgo de tener problemas por la contaminación del aire.</p></h4>
+    <br>
+    
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/contaminacion_aire.jpg" width="74%" height="27%">
+    </div>
+   </div>
+   
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Contaminación del Suelo</h1>
+    <div>
+    <p align="justify"><h4>La contaminación del suelo es una degradación de la calidad del suelo asociada a la presencia de sustancias químicas. 1 Se define como el aumento en la concentración de compuestos químicos, de origen antropogénico, que provoca cambios perjudiciales y reduce su empleo potencial, tanto por parte de la actividad humana, como por la naturaleza.</h4><br>
+
+<h4>Se habla de contaminación del suelo cuando se introducen sustancias o elementos de tipo sólido, líquido o gaseoso que ocasionan que se afecte la biota edáfica, las plantas, la vida animal y la salud humana.</h4><br>
+
+<h4>El suelo generalmente se contamina de diversas formas: cuando se rompen tanques de almacenamiento subterráneo, cuando se aplican pesticidas, por filtraciones del alcantarillado y pozos ciegos, o por acumulación directa de productos industriales o radioactivos.</h4></p>
+    <br>
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/contaminacion-del-suelo.jpg" width="66%" height="27%">
+    </div>
+   </div>
+   
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Contaminación Térmica</h1>
+    <div>
+    <p align="justify"><h4>La contaminación térmica se produce cuando un proceso altera la temperatura del medio de forma indeseada o perjudicial.</h4><br>
+<h4>El medio más habitual donde se produce es en el agua, ya que el aire se disipa más fácilmente. Pero también es posible, por ejemplo, cuando se concentra una gran cantidad de aparatos de aire acondicionado y estos expulsan el calor hacia la calle.</h4><br>
+<h4>Las centrales térmicas necesitan refrigeración ya que no convierten toda la energía química en electricidad (solo entre un 20-60 %) y el resto en calor. El agua es un buen medio para disipar el calor, es accesible y tiene una gran inercia térmica. Por eso estas centrales se sitúan cerca de un río o el mar.</p></h4>
+    <br>
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/Contaminacion-termica.jpg" width="60%" height="29%">
+    </div>
+   </div>
+   
+    <div data-role="collapsible" data-content-theme="false">
+   <h1>Contaminación Radioactiva</h1>
+    <div>
+    <p align="justify"><h4>Se denomina contaminación radiactiva o contaminación nuclear a la presencia no deseada de sustancias radioactivas en el entorno. Esta contaminación puede proceder de radioisótopos naturales o artificiales.</h4><br>
+<h4>La primera de ellas se da cuando se trata de aquellos isótopos radiactivos que existen en la corteza terrestre desde la formación de la Tierra o de los que se generan continuamente en la atmósfera por la acción de los rayos cósmicos. Cuando estos radioisótopos naturales se encuentran en concentraciones más elevadas que las que pueden encontrarse en la naturaleza (dentro de la variabilidad existente), se puede hablar de contaminación radiactiva.</h4></p>
+    <br>
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/contaminacion_radioactiva.png" width="60%" height="29%">
+    </div>
+   </div>
+   
+    <div data-role="collapsible" data-content-theme="false">
+   <h1>Contaminación Acustica</h1>
+    <div>
+    <p align="justify"><h4>Se llama contaminación acústica (o contaminación sonora) al exceso de sonido que altera las condiciones normales del ambiente en una determinada zona. Si bien el ruido no se acumula, traslada o mantiene en el tiempo como las otras contaminaciones, también puede causar grandes daños en la calidad de vida de las personas si no se controla bien o adecuadamente.</h4></p>
+    <br>
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/contaminacion_acustica.png" width="62%" height="29%">
+    </div>
+   </div>
+   
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Tres, JARF</h4>
+   </div>
+ </div> 
+  
+  
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Consecuencias</h1>
+ </div>
+ <div data-role="content" align="left">
+  <div>
+   <h3><center>Las consecuencias de la contaminación son:</center></h3>
+     <br>
+    <ol type="A" >
+      <li><b>Problemas para la salud:</b><br>La contaminación hace que las personas estemos cada vez          más expuestas a padecer problemas cardiovasculares, con el grave peligro que esto          entraña para nuestra salud y vida.</li>
+      <li><b>Debilitamiento de la capa de ozono:</b><br>
+     La capa de ozono es la que nos protege de los rayos del Sol, los cuales pueden llegar a ser mortíferos sin esta capa.La consecuencia de este debilitamiento es que cada vez nos protege menos y, por ende, cada vez tenemos una mayor temperatura en el planeta. Esto no solo hace que cada vez haya más zonas desiertas en las que es imposible vivir, sino que también            hace que el hielo en los polos se deshaga y mueran muchas especies por ello. No            hace falta mencionar que esto hace subir indudablemente el nivel del mar y que,            de seguir así, muchas ciudades costeras se verán arrasadas, quedándose sin playas            y sin zona costera.</li>
+      <li><b>La contaminación afecta al suelo y al agua:</b><br> la contaminación al medio ambiente afecta al agua y al suelo, lo que hace que cada vez haya más especies en peligro de extinción. El agua no es potable en una gran cantidad de sitios y el suelo para la siembre no tiene los nutrientes necesarios, lo que hace que cada vez se pueda cultivar menos y que el número de cosechas para nuestro sustento sea cada vez menor.</li>
+      <li><b>La contaminación afecta al clima:</b><br> seguro que ya te has dado cuenta que los inviernos pueden ser mucho más fríos o que los veranos son mucho más calurosos, a la vez que seguro te has dado cuenta que las estaciones como el invierno y el verano pueden ser más largas y que las de temperaturas medias, son cada vez más cortas. Todos estos cambios y los fenómenos que no se habían visto desde  hace mucho tiempo o incluso nunca se habían visto son causados por la contaminación.</li>
+          </ol>
+     </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Tres, JARF</h4>
+   </div>
+ </div>
+ 
+ 
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Reciclaje</h1>
+ </div>
+ <div data-role="content" align="justify">
+  <div>
+    <h4>El reciclaje es un proceso cuyo objetivo es convertir desechos en nuevos productos o en mateia para su posterior utilización.<br></h4>
+    <h4>Gracias al reciclaje se previene el desuso de materiales potencialmente útiles, se reduce el consumo de nueva materia prima, además de reducir el uso de energía, la contaminación del aire (a través de la incineración) y del agua (a través de los vertederos), así como también disminuir las emisiones de gases de efecto invernadero en comparación con la producción de plásticos.</h4><br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('reciclaje','','imagenes/Reciclaje2.jpg',1)"><img src="imagenes/Reciclaje.jpg" width="291" height="288" id="reciclaje"></a><br>
+ <h4>Las tres erres consisten en una práctica para alcanzar una sociedad más sostenible.<br></h4>
+  <p><b>*Reducir:</b> Acciones para reducir la producción de objetos susceptibles de convertirse en residuos, con medidas de compra racional, uso adecuado de los productos, compra de productos sostenibles.</p><br>
+  <p><b>Reutilizar:</b> Acciones que permiten el volver a usar un determinado producto para darle una segunda vida, con el mismo uso u otro diferente. Medidas encaminadas a la reparación de productos y alargar su vida útil.</p><br>
+  <p><b>Reciclar:</b> El conjunto de operaciones de recogida y tratamiento de residuos que permiten reintroducirlos en un ciclo de vida. Se utiliza la separación de residuos en origen para facilitar los canales adecuados.</p>       
+   </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Tres, JARF</h4>
+   </div>
+ </div>
+ 
+ 
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Medidas Preventivas</h1>
+ </div>
+ <div data-role="content" align="left">
+   <div>
+        <center><h3>Algunas Medidadas preventivas que deberias tomar en cuenta son:</h3></center>
+         <ol type="A">
+         <h4><li>Crear conciencia ciudadana.</li>
+         <li>No quemar ni talar plantas.</li>
+         <li>Colocar la basura en los lugares apropiados.</li>
+<li>Regular el servicio de aseo urbano.</li>
+<li>Controlar el uso de fertilizantes y pesticidas.</li>
+<li>Crear vías de desagüe para las industrias que no lleguen a los mares o ríos    utilizados para el servicio o consumo del ser humano o de los animales.</li>
+<li>Controlar los derrames accidentales de petróleo.</li>
+<li>Controlar los relaves mineros.</li>
+<li>Reciclar objetos (darles un nuevo uso).</li>
+<li>Tomar y generar conciencia de lo que está sucediendo.</li>
+<li>Realizar campañas de apoyo.</li>
+<li>Evitar el uso de aerosoles.</li>
+<li>Tener sentido de responsabilidad.</li></h4>
+</ol>
+   <br>
+     <h3><center>Algunas páginas donde puedes consultar mas información son:</center></h3>
+     
+     <h3><p align="center"><a href="http://www.greenpeace.org" target="_self" >Greenpeace México</a></h3>
+     <p align="center"><img src="imagenes/greenpeace.png" width="207" height="172"></p>
+     <h4>Greenpeace es una ONG ambientalista fundada en 1971 en Vancouver, Canadá. El objetivo de la ONG es proteger y defender el medio ambiente, interviniendo en diferentes puntos del planeta cuando se cometen atentados contra la Naturaleza.</h4><br>
+    <h3>
+      <p align="center"><a href="http://sustentable.endesu.org.mx" target="_self">sustentable.endesu</a></p></h3>
+     <p align="center"><img src="imagenes/sustenble.jpg" width="207" height="172"></p>
+     <h4>en México Espacios Naturales y Desarrollo Sustentable A.C. y establecimos como uno de nuestros objetivos principales, promover alternativas de producción en las comunidades de nuestro país, que garantizarán su sustento económico y que protegerán su capital natural</h4>
+ <br>
+ <h3>
+   <p align="center"><a href="http://www.wwf.org.mx" target="_self">WWF</a></p></h3>
+   <p align="center"><img src="imagenes/wwf.png" width="183" height="160"></p>
+   <h4>WWF o Fondo Mundial para la Naturaleza es la organización de conservación líder en el mundo. Nacida en Suiza en 1961, es conocida por el logo del panda y tiene presencia en más de 100 países.</h4>
+   <br>
+<h4>Con un enfoque científico, se distingue por una combinación de presencia local y alcance global, así como por soluciones innovadoras que satisfagan las necesidades tanto de la gente como de la naturaleza. Para lograrlo crea sinergias de largo plazo con diferentes sectores -gubernamental, empresarial y social-, y aplica las mejores prácticas de gobernanza y transparencia.</h4> 
+     </div>
+     <div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Tres, JARF</h4>
+   </div>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Contaminación en mi comunidad</h1>
+ </div>
+ <div data-role="content" align="justify">
+  <div>
+  <center><h4>Este apartado habla acerca de mi comunidad y como esta a sido afectada por la contaminación, tambien habla sobre medidas que se podrian tomar en cuenta para prevenir la contaminación;</h4></center><br>
+  <h4>Yo vivo en la comunidad de Atlixco, Puebla un lugar algo pequeño, pero muy bonito, muy tranquilo y con una gran y hermosa flora, no por nada es famoso por sus flores sin mencionar, que es un pueblo considerado "Magico".</h4><br>
+<h4> A pesar de ello tambien no se salva de la contaminación; Pues en muchas calles se presenta una gran cantidad de basura estancada en las banquetas, el smock de los camiones abundante, los mercados dejan muchos desperdicios en la calle, el aire mueve la basura y aveces cae a los rios provocando la contaminación de los rios que hay.</h4><br>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/seccion1.jpg" alt="seccion1" title="seccion1" id="wows1_0"/></li>
+		<li><img src="data1/images/seccion2.jpg" alt="seccion2" title="seccion2" id="wows1_1"/></li>
+		<li><img src="data1/images/seccion3.jpg" alt="seccion3" title="seccion3" id="wows1_2"/></li>
+		<li><img src="data1/images/seccion4.jpg" alt="seccion4" title="seccion4" id="wows1_3"/></li>
+		<li><img src="data1/images/seccion5.jpg" alt="seccion5" title="seccion5" id="wows1_4"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/seccion6.jpg" alt="cssslider" title="seccion6" id="wows1_5"/></a></li>
+		<li><img src="data1/images/seccion7.jpg" alt="seccion7" title="seccion7" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="seccion1"><span><img src="data1/tooltips/seccion1.jpg" alt="seccion1"/>1</span></a>
+		<a href="#" title="seccion2"><span><img src="data1/tooltips/seccion2.jpg" alt="seccion2"/>2</span></a>
+		<a href="#" title="seccion3"><span><img src="data1/tooltips/seccion3.jpg" alt="seccion3"/>3</span></a>
+		<a href="#" title="seccion4"><span><img src="data1/tooltips/seccion4.jpg" alt="seccion4"/>4</span></a>
+		<a href="#" title="seccion5"><span><img src="data1/tooltips/seccion5.jpg" alt="seccion5"/>5</span></a>
+		<a href="#" title="seccion6"><span><img src="data1/tooltips/seccion6.jpg" alt="seccion6"/>6</span></a>
+		<a href="#" title="seccion7"><span><img src="data1/tooltips/seccion7.jpg" alt="seccion7"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<center><h2>"Propuestas para evitar la contaminación"</h2></center>
+
+<h4><ol type="1"> 
+     <li>Colocar botes grandes de basura en diferentes puntos.</li>
+     <li>Realizar platicas sobre la Contaminación.</li>
+     <li>Realizar vigilancia en los rios y limpiarlos.</li>
+     <li>Separar la basura en organico e inorganico.</li>
+     <li>Multar a quienes sea encontrados tirando basura en area verdes</li>
+     <li>Sembrar arboles</li>
+     <li>Cambiar los escapes de los camiones</li>
+     <li>Utilizar bici mas seguido</li>  
+     </ol>
+     </h4>
+     <p align="center"><img src="imagenes/No-mas-basura.JPG" width="168" height="101">
+   </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Tres, JARF</h4>
+   </div>
+ </div>      
+</body>
+</html>
